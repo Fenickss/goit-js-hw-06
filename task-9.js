@@ -3,11 +3,12 @@
 // Массив имен (поле `name`) людей, отсортированных в зависимости от количества их
 // друзей (поле `friends`)
 
-// ```js
-// const getNamesSortedByFriendsCount = users => {
-//   // твой код
-// };
+import users from "./users.js";
 
-// console.log(getNamesSortedByFriendsCount(users));
-// // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
-// ```
+
+const getNamesSortedByFriendsCount = users => {
+  // твой код
+};
+
+console.log(getNamesSortedByFriendsCount(users));
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ] 
