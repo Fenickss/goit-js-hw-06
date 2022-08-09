@@ -6,7 +6,7 @@ import users from "./users.js";
 
 // ```js
 const getUsersWithGender = (users, gender) => {
-  return users.filter(users => gender = users.gender === 'male')
+  return users.filter(users => users.gender === gender)
 };
 
 console.log(getUsersWithGender(users, 'male'));
