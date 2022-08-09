@@ -2,10 +2,9 @@
 
 // Получить массив только неактивных пользователей (поле `isActive`).
 
-// ```js
-// const getInactiveUsers = users => {
-//   // твой код
-// };
+import users from "./users.js";
 
-// console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
-// ```
+const getInactiveUsers = users =>  users.filter(users => users.isActive === false);
+
+ console.log(getInactiveUsers(users));
+  // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]

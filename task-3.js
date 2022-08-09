@@ -2,10 +2,17 @@
 
 // Получить массив имен пользователей по полу (поле `gender`).
 
-// ```js
-// const getUsersWithGender = (users, gender) => {
-//   // твой код
-// };
+import users from "./users.js";
 
-// console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
-// ```
+// ```js
+const getUsersWithGender = (users, gender) => {
+  return users.filter(users => gender = users.gender === 'male')
+};
+
+console.log(getUsersWithGender(users, 'male'));
+ // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
+//  const getUsersWithGender = (users, gender) => {
+//     const maleGender = users.filter(user => user.gender === gender);
+//     return maleGender.map(user => user.name);
+//   };
